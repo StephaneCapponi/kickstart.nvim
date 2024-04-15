@@ -5,9 +5,6 @@ local ui = require 'harpoon.ui'
 vim.keymap.set('n', '<C-a>', mark.add_file)
 vim.keymap.set('n', '<C-x>', ui.toggle_quick_menu)
 
--- harpoon keymap
-vim.keymap.set('n', '<leader>pv', vim.cmd.Ex, { desc = 'Open Netrw' })
-
 -- Move selected lines around
 vim.keymap.set('v', 'J', ":m '>+1<CR>gb=gv")
 vim.keymap.set('v', 'K', ":m '<-2<CR>gb=gv")
@@ -32,3 +29,6 @@ vim.keymap.set('v', '<leader>vd', '"_d', { desc = 'Void delete' })
 
 -- Replace / Rename a word
 vim.keymap.set('n', '<leader>rw', [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], { desc = '[R]ename [W]ord' })
+
+-- Oil keymap
+vim.keymap.set('n', '<leader>pv', '<CMD>Oil<CR>', { desc = 'Open parent directory' })
