@@ -6,7 +6,7 @@ local mux = wezterm.mux
 local config = wezterm.config_builder()
 
 -- For example, changing the color scheme:
-config.color_scheme = 'Catppuccin Mocha'
+config.color_scheme = 'Dracula (Official)'
 
 -- Default terminal
 config.default_prog = { 'C:/Program Files/Git/bin/bash.exe' }
