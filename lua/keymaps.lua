@@ -15,7 +15,6 @@ vim.keymap.set('n', '<C-u>', '<C-u>zz')
 
 -- Keep cursor in the middle when searching for a word
 vim.keymap.set('n', 'n', 'nzzzv')
-vim.keymap.set('n', 'N', 'Nzzzv')
 
 -- Yank to clipboard
 vim.keymap.set('n', '<leader>y', '"+y')
