@@ -544,6 +544,7 @@ require('lazy').setup({
         pyright = {},
         jsonls = {},
         ruff_lsp = {},
+        angularls = {},
         -- rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --
@@ -808,7 +809,7 @@ require('lazy').setup({
 
       ---@diagnostic disable-next-line: missing-fields
       require('nvim-treesitter.configs').setup {
-        ensure_installed = { 'bash', 'c', 'html', 'lua', 'markdown', 'vim', 'vimdoc', 'python', 'json', 'xml', 'yaml' },
+        ensure_installed = { 'bash', 'c', 'html', 'lua', 'markdown', 'vim', 'vimdoc', 'python', 'json', 'xml', 'yaml', 'angular' },
         -- Autoinstall languages that are not installed
         auto_install = true,
         highlight = { enable = true },
